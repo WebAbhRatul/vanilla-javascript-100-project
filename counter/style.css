@@ -3,4 +3,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+.__counter__wrapper__ {
+  width: 40rem;
+  border: 1px solid black;
+  padding: 1rem;
+  background-color: aqua;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.__counter__wrapper__ > * {
+  margin-bottom: 1rem;
+}
+.__count__ {
+  font-size: 4rem;
+}
+.__counter__buttons__ button {
+  padding: 1rem;
+  margin: 0 1rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+.__subtruct__ {
+  background-color: orange;
+}
+.__reset__ {
+  background-color: red;
+}
+.__add__ {
+  background-color: green;
 }
