@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: green;
+}
+.container-wrapper {
+  width: 40rem;
+  text-align: center;
+  background-color: white;
+  padding: 5rem 5px;
+}
+input {
+  width: 70%;
+  padding: 1.2rem;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  border-bottom: 2px solid orange;
+}
+.btn {
+  padding: 1.2rem;
+  border: none;
+  outline: none;
+  background-color: orange;
+  cursor: pointer;
+}
+.result {
+  margin-top: 20px;
+  font-size: 2.2rem;
+}
