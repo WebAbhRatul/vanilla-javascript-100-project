@@ -54,3 +54,43 @@ img {
   color: #db6400;
   text-decoration: none;
 }
+.download-link .container h1 {
+  display: block;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #5608fb;
+}
+input[type="radio"] {
+  display: none;
+}
+
+.download-link .container nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #eee;
+  padding: 5px;
+  position: relative;
+  background-color: #c6d3e6;
+  z-index: 1;
+}
+.download-link .container nav label {
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+nav .slide {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 26%;
+  height: 100%;
+  background-color: #db6400;
+  z-index: -1;
+  border-radius: 5px;
+}
