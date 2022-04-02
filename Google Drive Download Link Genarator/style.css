@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 2rem;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.instructions {
+  width: 30%;
+  font-size: 1.6rem;
+  height: 100vh;
+  background-color: #1c2b2d;
+  padding-top: 5rem;
+  color: #eee;
+}
+.instructions h2 {
+  font-size: 3.5rem;
+  color: #db6400;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+.instructions h2:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 2px;
+  background-color: #eee;
+}
+.instructions ol {
+  padding-left: 1.3rem;
+}
+.instructions ol li p a {
+  color: #db6400;
+  text-decoration: none;
+}

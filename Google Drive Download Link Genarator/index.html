@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Drive Download Link Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="main-container">
+        <div class="instructions">
+          <div class="container">
+            <h2 class="line">Instructions</h2>
+            <p>
+              Follow the instructions below to get your Google Drive File Link
+            </p>
+            <hr />
+            <ol>
+              <li>
+                <p>Open <a href="https://drive.google.com">Google Drive</a></p>
+              </li>
+              <li>
+                <p>Right click on a file</p>
+              </li>
+              <li>
+                <p>Selct "Get Link" and click "Copy Link"</p>
+              </li>
+              <li>
+                <p>
+                  Paste the link here and click "Generate Direct Link" button
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!--! Download Section -->
+        <div class="download-link">
+          <div class="container">
+            <h1>Google Direct Link Download Generator</h1>
+            <input type="radio" name="tab" id="login" checked />
+            <input type="radio" name="tab" id="register" />
+            <input type="radio" name="tab" id="reset" />
+            <nav>
+              <label for="login" class="login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Paste Link
+              </label>
+              <label for="login" class="register">
+                <i class="fa-solid fa-headphones-simple"></i>
+                Embed Audio
+              </label>
+              <label for="login" class="reset">
+                <i class="fa-solid fa-photo-film"></i>
+                Embed Video
+              </label>
+            </nav>
+            <!-- Tab Content Section -->
+            <section>
+              <div class="content content-link">
+                <i class="fa-solid fa-download"></i>
+                <h2>Google Drive Link</h2>
+                <p>Paste your google drive file link below</p>
+                <form action="">
+                  <label for="glink">
+                    <i class="fa-brands fa-google-drive"></i>
+                    <input
+                      type="text"
+                      placeholder="Goggle Drive Link"
+                      class="glink"
+                      id="glink"
+                      autocomplete="off"
+                      required
+                    />
+                  </label>
+                  <button class="btn" id="btn">
+                    Generate Direct Download Link
+                  </button>
+                  <div class="embed-code">
+                    <hr />
+                    <h3>Direct Download Link</h3>
+                    <textarea
+                      name=""
+                      class="embed"
+                      id="download-link"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                    <span class="copy">copy</span>
+                  </div>
+                </form>
+              </div>
+              <!-- Audio Embedded Section -->
+              <div class="content content-audio">
+                <i class="fa-solid fa-headphones-simple"></i>
+                <h2>Audio Embedded Link</h2>
+                <p>
+                  If your link was an audio file, use the code snippetto embed
+                  it on a web page.
+                </p>
+                <form action="">
+                  <div class="embed-code">
+                    <hr />
+                    <h3>Audio Embedded Link</h3>
+                    <textarea
+                      name=""
+                      class="embed"
+                      id="embed-audio"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                    <span class="copy-audio">copy</span>
+                  </div>
+                </form>
+              </div>
+              <!--Video Embed Sections  -->
+              <div class="content content-video">
+                <i class="fa-solid fa-photo-film"></i>
+                <h2>Video/Document Embed Link</h2>
+                <p>
+                  If your link was an video/doc file, use the code snippetto
+                  embed it on a web page.
+                </p>
+                <form action="">
+                  <div class="embed-code">
+                    <hr />
+                    <h3>Direct Download Link</h3>
+                    <textarea
+                      name=""
+                      class="embed"
+                      id="embed-video"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                    <span class="copy-video">copy</span>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/a0d604104f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
