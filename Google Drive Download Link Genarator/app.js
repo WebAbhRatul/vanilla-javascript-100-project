@@ -46,6 +46,16 @@ btn.addEventListener("click", function (e) {
       });
 
     //Embedded Video
-    const video1 = 
+    const getVideoLink = glink.value.replace("/view?usp=sharing", "");
+    const video1 = "<iframe src='";
+    const video2 = "'/preview width='560' height='315'></iframe>";
+    document.getElementById(
+      "embed-video"
+    ).value = `${video1}${getVideoLink}${video2}`;
+    document
+      .querySelector(".copy-video")
+      .addEventListener("click", function () {
+        return copytext(document.querySelector("#embed-video"));
+      });
   }
 });
