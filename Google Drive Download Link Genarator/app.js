@@ -16,5 +16,19 @@ btn.addEventListener("click", function (e) {
       )
       .replace("/view?usp=sharing", "");
     downloadLink.value = getDownloadLink;
+    function copytext(target) {
+      if (target.value == "") {
+        alert("Please Generate a Download Link");
+      } else {
+        target.select();
+        document.execCommand("copy");
+        alert("Download Link Generated");
+      }
+    }
+
+    const copy = document.querySelector(".copy");
+    copy.addEventListener("click", function () {
+      return copytext(downloadLink);
+    });
   }
 });
