@@ -22,7 +22,7 @@ btn.addEventListener("click", function (e) {
       } else {
         target.select();
         document.execCommand("copy");
-        alert("Download Link Generated");
+        alert("Link Generated");
       }
     }
 
@@ -30,5 +30,22 @@ btn.addEventListener("click", function (e) {
     copy.addEventListener("click", function () {
       return copytext(downloadLink);
     });
+
+    // Embedded Audio
+    const audio1 = "<audio width='300' height='20' controls='controls' src='";
+    const audio2 = "' type='audio/mp3' </audio>";
+
+    document.querySelector(
+      "#embed-audio"
+    ).value = `${audio1}${downloadLink.value}${audio2}`;
+
+    document
+      .querySelector(".copy-audio")
+      .addEventListener("click", function () {
+        return copytext(document.querySelector("#embed-audio"));
+      });
+
+    //Embedded Video
+    const video1 = 
   }
 });
