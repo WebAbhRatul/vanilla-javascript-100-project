@@ -93,4 +93,140 @@ nav .slide {
   background-color: #db6400;
   z-index: -1;
   border-radius: 5px;
+  transition: all 0.3s;
+}
+
+#register:checked ~ nav .slide {
+  left: 34%;
+}
+#reset:checked ~ nav .slide {
+  left: 68%;
+}
+#login:checked ~ nav label.login,
+#register:checked ~ nav label.register,
+#reset:checked ~ nav label.reset {
+  color: #fff;
+}
+.tab-section {
+  border: 1px solid green;
+}
+.content {
+  display: none;
+}
+#login:checked ~ .tab-section .content-link {
+  display: block;
+}
+#register:checked ~ .tab-section .content-audio {
+  display: block;
+}
+#reset:checked ~ .tab-section .content-video {
+  display: block;
+}
+.tab-section .content {
+  margin: 3rem auto;
+  text-align: center;
+}
+.content > i {
+  font-size: 3rem;
+  color: #db6400;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 8px;
+}
+.content h2 {
+  position: relative;
+  margin: 5px 0;
+}
+.content p {
+  margin: 5px 0;
+}
+.content form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+.content form label {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.content form label input {
+  width: 100%;
+  padding: 1.3rem 3rem;
+  display: block;
+  position: relative;
+  border-radius: 10px 0 10px 0;
+  border-bottom: rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: none;
+  color: rgb(89, 86, 86);
+}
+.content form label input:focus:invalid {
+  font-size: 1.6rem;
+  border-bottom: 2px solid #db6400;
+}
+.content form label input:invalid {
+  font-size: 1.6rem;
+  border-bottom: 2px solid green;
+  background-color: #e8f0fe;
+}
+.content form i {
+  position: absolute;
+  left: 1rem;
+  top: 1.5rem;
+  color: #db6400;
+  font-size: 1.3rem;
+  z-index: 1;
+}
+.content .btn {
+  padding: 1.3rem;
+  border: none;
+  outline: none;
+  background-color: #db6400;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+.content .btn:hover {
+  background-color: #eee;
+  color: black;
+  border: 1px solid #db6400;
+}
+::placeholder {
+  font-size: 1.3rem;
+  color: grey;
+}
+.embed-code {
+  font-size: 1.6rem;
+  position: relative;
+}
+.embed-code h3 {
+  margin: 5px 0;
+}
+.embed-code textarea {
+  width: 100%;
+  height: 10rem;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.embed-code span {
+  font-size: 1.6rem;
+  position: absolute;
+  right: 1px;
+  bottom: 5px;
+  background-color: green;
+  padding: 5px 8px;
+  border: 1px solid #eee;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.embed-code span:hover {
+  font-size: 1.8rem;
 }
